@@ -28,8 +28,6 @@ int Quicksort::Partition (int *A, int start, int end) {
 			store++;
 		}
 	}
-
-	test_print(A, start, end);
 	//put back pivot in its correct location at the crossing of values 
 	//smaller and bigger than itself
 	temp = A[store];
