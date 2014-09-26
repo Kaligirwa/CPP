@@ -18,10 +18,10 @@ Practice the basics
 - to compile: sh compile.sh 
 - to run: ./a.out <size of array> 
 
-4) BASICS/BINARYSEARCH 
+3) BASICS/BINARYSEARCH 
 - find an element in an array of random elements
 - sort the array first 
 - divide the array in smaller partition till the element is found or not
 
-= to compile:  sh compile.sh
+- to compile:  sh compile.sh
 - to run: ./a.out <size of array> <element to find>
