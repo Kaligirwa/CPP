@@ -1,1 +1,1 @@
-g++ quicksort.cpp sort.cpp test.cpp 
+g++ quicksort.cpp sort.cpp ../test/test.cpp 

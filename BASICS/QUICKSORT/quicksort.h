@@ -2,7 +2,7 @@
 #define QUICKSORT_H
 
 #include <iostream>
-#include "test.h"
+#include "../test/test.h"
 
 class Quicksort{
 	public:

@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <cstring>
 #include "quicksort.h"
-#include "test.h"
+#include "../test/test.h"
 
 //void test_print (int * A, int size); 
 int main (int argc, char *argv[]) { 
@@ -27,7 +27,6 @@ int main (int argc, char *argv[]) {
 	sort->Sort(A, 0, size-1);
 	//test final array
 	test_print (A, 0, size-1);
-
 
 }
 
