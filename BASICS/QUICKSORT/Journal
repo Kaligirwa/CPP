@@ -1,0 +1,19 @@
+This is a classic sort method 
+In the best of cases, it excutes in O(nlogn), however the worst-case scenario can give a complexity of up to O(n^2) 
+The reason being that whenever you partition, all the elements might be smaller than the pivot: 
+For example if the array is already inversely sorted and we choose pivot to be the first element of the array
+In this case one partition will contain all the elements less than pivot and the other partition will be empty
+
+Technical issues
+Header issue: 
+At first for test.cpp, I only had a test.h with the functions defined inline. Well, this created a linking error that I just couldnt
+get rid of even when using extern "C". The easiest solution is to separate the .h and .cpp and voila 
+
+Indexing issue: 
+I was referencing the element A[n] where n is the size of the array, clearly this is out of bounds, but I was getting the value 0 back 
+I am not sure if it is because that particular memory location has 0 bits...oh wait it is because I was displaying whatever value found
+as an unsigned int...defaulting to 0? To be explored. 
+Indexing is super important, and it can mess up the accuracy of the algorithm. 
+TO-DO: Add conditions around indexes to make sure they are within the boundaries, either by creating a new local variable = n-1
+or throwing an error. 
+
