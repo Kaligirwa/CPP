@@ -9,3 +9,11 @@ Practice the basics
 - sorts the array recursively by partitioning it in smaller and smaller subarrays 
 - to compile: sh compile.sh
 - to run: ./a.out <size of array> 
+
+2) Heapsort
+- creates an array of random numbers between 0 and size of the array
+- sorts the array using a heap, repeatedly removing the largest element on top 
+- and re-heaping the remaining array
+
+- to compile: sh compile.sh 
+- to run: ./a.out <size of array> 
