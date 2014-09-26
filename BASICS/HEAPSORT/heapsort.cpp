@@ -4,7 +4,7 @@ void Heapsort::Sort(int * A, int size) {
 
 	BuildHeap(A, size);
 	int temp;
-	for (int i = size-1; i > 0; i--) { 
+	for (int i = size-1; i >=0; i--) { 
 		temp = A[0];
 		A[0] = A[i]; 
 		A[i] = temp; 
@@ -16,7 +16,7 @@ void Heapsort::Sort(int * A, int size) {
 
 //first build a heap without doing any swapping
 void Heapsort::BuildHeap(int * A, int size) { 
-	for (int i = size-1; i >0; i--) { 
+	for (int i = size-1; i >=0; i--) { 
 		Heapify (A, i, size);
 	}
 }
