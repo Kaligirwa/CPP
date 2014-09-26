@@ -17,3 +17,13 @@ Indexing is super important, and it can mess up the accuracy of the algorithm.
 TO-DO: Add conditions around indexes to make sure they are within the boundaries, either by creating a new local variable = n-1
 or throwing an error. 
 
+Print issue: 
+Don't make stupid mistakes like these: 
+test_print (A, start, end)
+for (int i = 0; i < end; i++) { 
+		//display 
+		printf ("%u ", *A++);
+	}
+Seriously though, you are always starting the printf from index = 0, besides you don't display end which is effectively part of the array 
+
+
