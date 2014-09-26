@@ -16,22 +16,24 @@ int Quicksort::Partition (int *A, int start, int end) {
 	int store = start;
 	int temp; 
 	temp = A[p]; 
-	A[p] = A[end-1]; 
-	A[end-1] = temp; 
+	A[p] = A[end]; 
+	A[end] = temp; 
 
 	//loop to move numbers smaller than A[end] on the "left"
 	for (int i = start; i < end; i++) { 
-		if (A[i] <= A[end-1]) { 
+		if (A[i] <= A[end]) { 
 			temp = A[i]; 
 			A[i] = A[store]; 
 			A[store] = temp; 
 			store++;
 		}
 	}
+
+	test_print(A, start, end);
 	//put back pivot in its correct location at the crossing of values 
 	//smaller and bigger than itself
 	temp = A[store];
-	A[store] = A[end-1]; 
+	A[store] = A[end]; 
 	A[end] =temp; 
 
 	//return the location of pivot, which is its correct last position
