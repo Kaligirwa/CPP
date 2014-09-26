@@ -17,24 +17,11 @@ int main () {
 	//test initial array
 	Quicksort * sort = new Quicksort ();
 	test_print (A, 0, size);
-	//declare an object of class quicksort 
-	
+	//delare an object of class quicksort 
 	sort->Sort(A, 0, size);
-
 	//test final array
 	test_print (A, 0, size);
 
 
 }
 
-
-/* TESTS */
-//test array by displaying it
-// void test_print(int * A, int size) { 
-// 	//print 
-// 	for (int i = 0; i < size; i++) { 
-// 		//display 
-// 		printf ("%u ", *A++);
-// 	}
-// 	printf ("\n");
-// }

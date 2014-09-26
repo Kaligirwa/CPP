@@ -14,16 +14,13 @@ int Quicksort::Partition (int *A, int start, int end) {
 	
 	int p = start; 
 	int store = start;
-	test_print(A,start,end);
 	int temp; 
 	temp = A[p]; 
 	A[p] = A[end-1]; 
 	A[end-1] = temp; 
-	printf ("A[p]: %u, A[store]:%u, A[end]: %u \n", A[p], A[store], A[end-1]);
 
 	//loop to move numbers smaller than A[end] on the "left"
 	for (int i = start; i < end; i++) { 
-		test_print (A,start,end);
 		if (A[i] <= A[end-1]) { 
 			temp = A[i]; 
 			A[i] = A[store]; 
